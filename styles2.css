@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+body {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 200px;
+}
+.timeCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+}
+.timeCard * {
+  margin: 2px;
+  padding: 10px;
+}
+h1 {
+  font-size: 100px;
+  background: linear-gradient(#19b2d5, #1b8bb0);
+}
+h2 {
+  font-size: 20x;
+  background: linear-gradient(#044b66, #005d7b);
+}
+.hourCard h1 {
+  background: linear-gradient(#fd517f, #fb3d57);
+}
+.hourCard h2 {
+  background: linear-gradient(#7b122e, #a30d36);
+}
+#ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50vh;
+  left: 33vw;
+  transition: 0.75s;
+}
+.move {
+  transform: translateX(33vw);
+}
+.red {
+  background-color: #fd517f;
+}
+.blue {
+  background-color: #19b2d5;
+}

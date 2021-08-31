@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js
+    "></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container" class="container">
+    <span class="timeCard hourCard"><h1 id="hours"></h1><h2>Hours</h2></span>
+
+    <span class="spacer"></span>
+
+    <span class="timeCard"><h1 id="minutes"></h1><h2>Minutes</h2></span>
+
+    <span class="spacer"></span>
+
+    <span class="timeCard"><h1 id="seconds"></h1><h2>Seconds</h2></span>
+  </div>
+  <span class="bottomSpacer">
+   <div id="ball" class="blue"></div>
+  </span>
+  <div class="leave">
+    <h2>Departure</h2>
+    <form action="">
+      <label for="leaveHour"><input type="text" id="leaveHour" value="19">Hour</label>
+      <label for="leaveMinute"><input type="text" id="leaveMinute" value="11">Minute</label>
+    </form>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

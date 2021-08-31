@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 200px;
+}
+.timeCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  color: white;
+}
+.timeCard * {
+  margin: 2px;
+  padding: 10px;
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 20x;
+}
+.spacer {
+  width: 1px;
+  height: 100px;
+  background-color: rgb(92, 92, 92);
+}
+.leave {
+  margin: 100px;
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.leave input {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 40px;
+  width: 50px;
+}
+.leave input:focus {
+  outline: none;
+}
+.bottomSpacer {
+  background-color: rgb(92, 92, 92);
+  width: 50vw;
+  height: 1px;
+}
+#ball {
+  background-color: white;
+  height: 1px;
+  width: 10px;
+  transition: 0.5s;
+}
+
+.move {
+  transform: translateX(50vw);
+}
