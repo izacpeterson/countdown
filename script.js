@@ -1,25 +1,30 @@
+var endMonth = $('#leaveMonth').val() - 1;
+var endDate = $('#leaveDate').val();
 var endHours = $('#leaveHour').val();
 var endMinutes = $('#leaveMinute').val();
 //year, month, day, hour, minute, second, and millisecond
 
-var endTime = new Date(2021, 7, 30, endHours, endMinutes, 0, 0);
+var endTime = new Date(2021, endMonth, endDate, endHours, endMinutes, 0, 0);
 
 calcRemaining();
 setInterval(calcRemaining, 1000);
 
 function calcRemaining() {
-  endHours = $('#leaveHour').val();
-  endMinutes = $('#leaveMinute').val();
-  endTime = new Date(2021, 7, 30, endHours, endMinutes, 0, 0);
+  var endMonth = $('#leaveMonth').val() - 1;
+  var endDate = $('#leaveDate').val();
+  var endHours = $('#leaveHour').val();
+  var endMinutes = $('#leaveMinute').val();
+  console.log(endMonth);
+  var endTime = new Date(2021, endMonth, endDate, endHours, endMinutes, 0, 0);
   var now = new Date().getTime();
 
   var distance = endTime - now;
-  console.log(distance);
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  $('#days').text(`${days}`);
   $('#hours').text(`${hours}`);
   $('#minutes').text(`${minutes}`);
   $('#seconds').text(`${seconds}`);
