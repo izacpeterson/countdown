@@ -10,21 +10,20 @@ body {
   flex-direction: column;
   align-items: center;
   color: white;
+  justify-content: center;
+  height: 95vh;
 }
-
 .container {
   color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 200px;
 }
 .timeCard {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 150px;
-  height: 200px;
+  min-width: 150px;
   color: white;
 }
 .timeCard * {
@@ -35,17 +34,16 @@ h1 {
   font-size: 100px;
 }
 h2 {
-  font-size: 20x;
+  font-size: 20px;
 }
 .spacer {
   width: 1px;
-  height: 100px;
+  height: 10vh;
   background-color: rgb(92, 92, 92);
 }
 .leave {
-  margin: 100px;
   display: flex;
-  width: 50vw;
+  width: 80vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -75,6 +73,7 @@ label {
   background-color: rgb(92, 92, 92);
   width: 50vw;
   height: 1px;
+  margin: 20vh;
 }
 #ball {
   background-color: white;
@@ -85,4 +84,26 @@ label {
 
 .move {
   transform: translateX(50vw);
+}
+@media screen and (max-width: 480px) {
+  body {
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .timeCard {
+    max-width: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .spacer {
+    width: 50vw;
+    height: 1px;
+    background-color: rgb(92, 92, 92);
+  }
+  .bottomSpacer {
+    margin: 5vh;
+  }
 }
