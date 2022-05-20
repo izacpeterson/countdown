@@ -15,7 +15,7 @@ function calcRemaining() {
   var endHours = $('#leaveHour').val();
   var endMinutes = $('#leaveMinute').val();
   console.log(endMonth);
-  var endTime = new Date(2021, endMonth, endDate, endHours, endMinutes, 0, 0);
+  var endTime = new Date(2022, endMonth, endDate, endHours, endMinutes, 0, 0);
   var now = new Date().getTime();
 
   var distance = endTime - now;
